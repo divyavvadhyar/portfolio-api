@@ -1,45 +1,69 @@
-openapi: 3.0.0
-info:
-  title: Divya’s Portfolio API
-  version: 1.0.0
-  description: |
-    📘 A simple Portfolio API that returns JSON for my writing, projects, GitHub, and more.
-    Built to showcase API documentation and design skills using Swagger and Postman.
-
 paths:
   /gql.hashnode.com/:
     post:
-      summary: Get author bio details from Hashnode blogs.
-      tags: [Portfolio]
+      summary: Get author bio details from Hashnode blogs
+      tags:
+        - Portfolio
+      requestBody:
+        description: Sample GraphQL query to fetch profile data
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                query:
+                  type: string
+              example:
+                query: |
+                  {
+                    user(username: "your-username") {
+                      name
+                      bio
+                      socialMediaLinks {
+                        github
+                        linkedin
+                      }
+                      techStack {
+                        totalDocuments
+                      }
+                    }
+                  }
       responses:
         '200':
-          description: A short personal bio and profile links
+          description: A successful response from Hashnode GraphQL API
           content:
             application/json:
               schema:
                 type: object
                 properties:
-                  bio:
-                    type: string
-                  website:
-                    type: string
-                  id:
-                    type: string
-                  username:
-                    type: string
-                  name:
-                    type: string
-                  tagline:
-                    type: string
-                  socialMediaLinks:
+                  data:
                     type: object
                     properties:
-                      github:
-                        type: string
-                      linkedin:
-                        type: string
-                  techStack:
-                    type: object
-                    properties:
-                      totalDocuments:
-                        type: integer
+                      user:
+                        type: object
+                        properties:
+                          name:
+                            type: string
+                          bio:
+                            type: string
+                          website:
+                            type: string
+                          id:
+                            type: string
+                          username:
+                            type: string
+                          tagline:
+                            type: string
+                          socialMediaLinks:
+                            type: object
+                            properties:
+                              github:
+                                type: string
+                              linkedin:
+                                type: string
+                          techStack:
+                            type: object
+                            properties:
+                              totalDocuments:
+                                type: integer
