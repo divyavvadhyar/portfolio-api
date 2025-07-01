@@ -35,13 +35,12 @@ paths:
                   socialMediaLinks: 
                     type: object
                     properties:
-                      github: string
-                      linkedin: string 
+                      github: 
+                        type: string
+                      linkedin: 
+                        type: string 
                   techStack: 
                     type: object
                     properties:
                        totalDocuments: 
                         type: integer
-    
-
-            
