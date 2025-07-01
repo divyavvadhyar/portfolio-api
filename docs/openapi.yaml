@@ -67,3 +67,12 @@ paths:
                             properties:
                               totalDocuments:
                                 type: integer
+        example:
+          data:
+            user:
+              name: Divya Vadhyar
+              bio: Tech writer passionate about docs and dev experience
+              username: syntaxandsoul
+              socialMediaLinks:
+                github: https://github.com/divyavvadhyar
+                linkedin: https://linkedin.com/in/divya-vadhyar                              
