@@ -6,7 +6,6 @@ info:
     📘 A simple Portfolio API that returns JSON for my writing, projects, GitHub, and more.
     Built to showcase API documentation and design skills using Swagger and Postman.
 
-
 paths:
   /gql.hashnode.com/:
     post:
@@ -25,22 +24,22 @@ paths:
                   website:
                     type: string
                   id:
-                    type: string  
+                    type: string
                   username:
                     type: string
                   name:
-                    type: string            
-                  tagline: 
                     type: string
-                  socialMediaLinks: 
+                  tagline:
+                    type: string
+                  socialMediaLinks:
                     type: object
                     properties:
-                      github: 
+                      github:
                         type: string
-                      linkedin: 
-                        type: string 
-                  techStack: 
+                      linkedin:
+                        type: string
+                  techStack:
                     type: object
                     properties:
-                       totalDocuments: 
+                      totalDocuments:
                         type: integer
