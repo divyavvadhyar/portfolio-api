@@ -5,7 +5,7 @@ info:
   description: >
     📘 A simple Portfolio API that returns JSON for my writing, projects, GitHub, and more.  
     Built to showcase API documentation and design skills using Swagger and Postman.
-
+    ⚠ Note: 'Try it out' will return a 405 error because there is no live backend handling POST requests. Use Postman to interact with real APIs like Hashnode’s GraphQL endpoint.
 servers:
   - url: https://gql.hashnode.com
 
