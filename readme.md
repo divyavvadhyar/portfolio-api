@@ -27,7 +27,7 @@ Returns profile data as if fetched via a GraphQL query from Hashnode.
 
 ```json
 {
-  "query": "{ user(username: \"syntaxandsoul\") { name bio socialMediaLinks { github linkedin } techStack { totalDocuments } } }"
+  "query": "{ user(username: \"SyntaxAndSoul\") { name bio socialMediaLinks { github linkedin } techStack { totalDocuments } } }"
 }
 ```
 

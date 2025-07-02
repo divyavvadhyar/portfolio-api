@@ -28,7 +28,7 @@ paths:
               example:
                 query: |
                   query {
-                    user(username: "SyntaxandSoul") {
+                    user(username: "SyntaxAndSoul") {
                       name
                       username
                       bio {
