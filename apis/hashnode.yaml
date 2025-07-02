@@ -91,3 +91,13 @@ paths:
                       linkedin: https://linkedin.com/in/divya-vadhyar
                     techStack:
                       totalDocuments: 4
+'405':
+    description: Method Not Allowed — GitHub Pages does not support live POST requests
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            error:
+              type: string
+              example: "405 Method Not Allowed. This static Swagger UI cannot process live POST requests."
