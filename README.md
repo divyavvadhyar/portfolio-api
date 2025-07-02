@@ -81,4 +81,13 @@ This API project was created to:
 
 🔹 GraphQL-like request structure for realism
 
+### ⚠️ Known Limitation
+
+This Swagger UI is hosted as a static page via GitHub Pages. It does **not** connect to a live backend.
+
+> Trying the "Try it out" feature will return a `405 Method Not Allowed` error — this is expected behavior due to GitHub Pages not supporting POST requests. 
+
+This API is meant to demonstrate documentation, structure, and realistic examples — not to execute live queries.
+
 > “Syntax and Soul” — because great documentation is both precise and human.
+
