@@ -9,7 +9,7 @@ A simple, developer-friendly API that serves structured JSON responses represent
 | Field            | Value                                                             |
 | ---------------- | ----------------------------------------------------------------- |
 | **API Version**  | `v1.0.0`                                                          |
-| **OpenAPI Spec** | [`openapi.yaml`](./docs/openapi.yaml)                             |
+| **OpenAPI Spec** | [`openapi.yaml`](./docs/hashnode.yaml)                            |
 | **Docs Hosted**  | [Live Swagger UI](https://divyavvadhyar.github.io/portfolio-api/) |
 | **Spec Format**  | OpenAPI 3.0                                                       |
 | **Content-Type** | `application/json`                                                |
@@ -38,7 +38,9 @@ Returns profile data as if fetched via a GraphQL query from Hashnode.
   "data": {
     "user": {
       "name": "Divya Vadhyar",
-      "bio": "Tech writer passionate about docs and dev experience",
+      "bio": {
+        "text": "Tech writer passionate about docs and dev experience"
+      },
       "username": "syntaxandsoul",
       "tagline": "Docs. Depth. Dev empathy.",
       "socialMediaLinks": {
@@ -81,13 +83,3 @@ This API project was created to:
 🔹 GitHub Pages for hosting
 
 🔹 GraphQL-like request structure for realism
-
-### ⚠️ Known Limitation
-
-This Swagger UI is hosted as a static page via GitHub Pages. It does **not** connect to a live backend.
-
-> Trying the "Try it out" feature will return a `405 Method Not Allowed` error — this is expected behavior due to GitHub Pages not supporting POST requests.
-
-This API is meant to demonstrate documentation, structure, and realistic examples — not to execute live queries.
-
-> “Syntax and Soul” — because great documentation is both precise and human.
