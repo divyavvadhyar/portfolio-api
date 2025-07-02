@@ -9,7 +9,7 @@ A simple, developer-friendly API that serves structured JSON responses represent
 | Field            | Value                                                             |
 | ---------------- | ----------------------------------------------------------------- |
 | **API Version**  | `v1.0.0`                                                          |
-| **OpenAPI Spec** | [`openapi.yaml`](./docs/hashnode.yaml)                            |
+| **OpenAPI Spec** | [`hashnode.yaml`](./docs/hashnode.yaml)                           |
 | **Docs Hosted**  | [Live Swagger UI](https://divyavvadhyar.github.io/portfolio-api/) |
 | **Spec Format**  | OpenAPI 3.0                                                       |
 | **Content-Type** | `application/json`                                                |
