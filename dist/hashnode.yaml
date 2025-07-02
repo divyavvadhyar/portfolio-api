@@ -1,0 +1,93 @@
+openapi: 3.0.0
+info:
+  title: Divya’s Portfolio API
+  version: 1.0.0
+  description: >
+    📘 A simple Portfolio API that returns JSON for my writing, projects, GitHub, and more.  
+    Built to showcase API documentation and design skills using Swagger and Postman.
+
+servers:
+  - url: https://gql.hashnode.com
+
+paths:
+  /:
+    post:
+      summary: Get author bio details from Hashnode blogs
+      tags:
+        - Portfolio
+      requestBody:
+        description: Sample GraphQL query to fetch profile data
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                query:
+                  type: string
+              example:
+                query: |
+                  query {
+                    user(username: "SyntaxandSoul") {
+                      name
+                      username
+                      bio {
+                        text
+                      }
+                      socialMediaLinks {
+                        github
+                        linkedin
+                      }
+                      techStack(page: 1, pageSize: 100) {
+                        totalDocuments
+                      }
+                    }
+                  }
+      responses:
+        "200":
+          description: A successful response from Hashnode GraphQL API
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      user:
+                        description: User details
+                        type: object
+                        properties:
+                          name:
+                            description: Name of the user
+                            type: string
+                          bio:
+                            type: string
+                          username:
+                            type: string
+                          tagline:
+                            type: string
+                          socialMediaLinks:
+                            type: object
+                            properties:
+                              github:
+                                type: string
+                              linkedin:
+                                type: string
+                          techStack:
+                            type: object
+                            properties:
+                              totalDocuments:
+                                type: integer
+              example:
+                data:
+                  user:
+                    name: Divya Vadhyar
+                    bio: Tech writer passionate about docs and dev experience
+                    username: syntaxandsoul
+                    tagline: Docs. Depth. Dev empathy.
+                    socialMediaLinks:
+                      github: https://github.com/divyavvadhyar
+                      linkedin: https://linkedin.com/in/divya-vadhyar
+                    techStack:
+                      totalDocuments: 4
