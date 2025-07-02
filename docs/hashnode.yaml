@@ -83,7 +83,8 @@ paths:
                 data:
                   user:
                     name: Divya Vadhyar
-                    bio: Tech writer passionate about docs and dev experience
+                    bio:
+                      text: Tech writer passionate about docs and dev experience
                     username: syntaxandsoul
                     tagline: Docs. Depth. Dev empathy.
                     socialMediaLinks:
