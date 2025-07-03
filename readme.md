@@ -68,9 +68,9 @@ This API project was created to:
 
 | **Resource**      | **Links**                                                                                |
 | ----------------- | ---------------------------------------------------------------------------------------- |
-| **Swagger Docs**  | Live Documentation (Coming soon)                                                         |
+| **Swagger Docs**  | [Live Documentation](https://portfolio-api.hashnode.space/default-guide/swagger-ui-documentation)|
 | **GitHub Repo**   | [github.com/divyavvadhyar/portfolio-api](https://github.com/divyavvadhyar/portfolio-api) |
-| **Postman API**   | (Coming soon)                                                                            |
+| **Postman API**   | [Postman collection API documentation](https://portfolio-api.hashnode.space/default-guide/postman-portfolio-api-documentation)|
 | **Hashnode Blog** | [syntaxandsoul.hashnode.dev](https://hashnode.com/@SyntaxAndSoul)                        |
 | **LinkedIn**      | [linkedin.com/in/divyavadhyar](https://www.linkedin.com/in/divya-vadhyar/)               |
 
