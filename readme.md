@@ -19,7 +19,7 @@ A simple, developer-friendly API that serves structured JSON responses represent
 
 ## 🚀 API Endpoints
 
-### `POST /gql.hashnode.com/`
+`POST /gql.hashnode.com/`
 
 Returns profile data as if fetched via a GraphQL query from Hashnode.
 
