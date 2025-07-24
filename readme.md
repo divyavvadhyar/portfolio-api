@@ -1,10 +1,10 @@
-# 📘 Divya’s Portfolio API
+# Divya’s Portfolio API
 
 A simple, developer-friendly API that serves structured JSON responses representing my portfolio, technical presence, and digital resources — designed to demonstrate my API documentation, OpenAPI, and Swagger UI skills.
 
 ---
 
-## 🔖 Overview
+## Overview
 
 | Field            | Value                                                             |
 | ---------------- | ----------------------------------------------------------------- |
@@ -17,13 +17,13 @@ A simple, developer-friendly API that serves structured JSON responses represent
 
 ---
 
-## 🚀 API Endpoints
+## API Endpoints
 
 `POST /gql.hashnode.com/`
 
 Returns profile data as if fetched via a GraphQL query from Hashnode.
 
-#### 📥 Request (GraphQL-style)
+#### Request (GraphQL-style)
 
 ```json
 {
@@ -31,7 +31,7 @@ Returns profile data as if fetched via a GraphQL query from Hashnode.
 }
 ```
 
-#### 📤 Response (200 OK)
+#### Response (200 OK)
 
 ```json
 {
@@ -55,7 +55,7 @@ Returns profile data as if fetched via a GraphQL query from Hashnode.
 }
 ```
 
-## 🧠 Purpose
+## Purpose
 
 This API project was created to:
 
@@ -64,7 +64,7 @@ This API project was created to:
 - ✅ Showcase how static APIs can simulate real-world schemas for portfolio and writing samples
 - ✅ Build an interactive developer-friendly documentation interface
 
-## 📂 Related Links
+## Related Links
 
 | **Resource**      | **Links**                                                                                |
 | ----------------- | ---------------------------------------------------------------------------------------- |
@@ -74,7 +74,7 @@ This API project was created to:
 | **Hashnode Blog** | [syntaxandsoul.hashnode.dev](https://hashnode.com/@SyntaxAndSoul)                        |
 | **LinkedIn**      | [linkedin.com/in/divyavadhyar](https://www.linkedin.com/in/divya-vadhyar/)               |
 
-## 🛠 Tech Stack
+## Tech Stack
 
 🔹 YAML / OpenAPI 3.0
 
